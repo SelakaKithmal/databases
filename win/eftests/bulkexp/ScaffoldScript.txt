@@ -1,0 +1,1 @@
+﻿dotnet ef dbcontext scaffold "Data Source=BUWANEKA-S;Initial Catalog=CC_Client_UKG_Clone;Integrated Security=true;Column Encryption Setting=enabled;" Microsoft.EntityFrameworkCore.SqlServer -o Models
