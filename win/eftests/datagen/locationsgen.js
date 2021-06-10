@@ -133,7 +133,7 @@ const locationTypes = [
 'Department',
 ]
 
-let lim = 500;
+let lim = 5000;
 
 fs.appendFileSync(path, header, 'utf8', err => {
     err ? console.log(err.message) : null
@@ -148,7 +148,7 @@ while(lim > 0) {
         this.LocationName= `${faker.random.alphaNumeric(5)}-${faker.address.cityName()}-${faker.address.citySuffix()}`,
         this.LocationDisplayName= this.LocationName,
         this.LocationType = locationTypes[Math.round(Math.random()*(locationTypes.length-1))],
-        this.ParentLocationCode = 1,
+        this.ParentLocationCode = "Default",
         this.ActiveStatus = Math.round(Math.random()),
         this.TestLocation = "Default",
         this.Timezone = timezones[Math.round(Math.random()*(timezones.length-1))],
@@ -157,27 +157,27 @@ while(lim > 0) {
         this.City = faker.address.city(),
         this.State = faker.address.state(),
         this.ZipCode = faker.address.zipCode(),
-        this.Country = faker.address.country(),
+        this.Country = faker.address.country().substr(0,50),
         this.Phonenumber = faker.phone.phoneNumber('###-###-####'),
-        this.PhoneExt = faker.datatype.number(9),
+        this.PhoneExt = faker.datatype.number(4),
         this.Email = faker.internet.email(),
         this.LocationPhone = faker.phone.phoneNumber('###-###-####'),
-        this.Latitude = faker.address.latitude(),
-        this.Longitude = faker.address.longitude(),
+        this.Latitude = Number(faker.address.latitude()),
+        this.Longitude = Number(faker.address.longitude()),
         this.LocationColor = `RGB(${faker.datatype.number(255)},${faker.datatype.number(255)},${faker.datatype.number(255)})`,
         this.AutoWrapTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.ShowSignedInUsers = Math.round(Math.random()),
         this.EnableWaitSmarter = Math.round(Math.random()),
         this.AllowRemoteCheckIn = Math.round(Math.random()),
-        this.CutOffBeforeClosing = faker.datatype.number(100),
+        this.CutOffBeforeClosing = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.CheckInLeadTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.UseAppointments = Math.round(Math.random()),
         this.FutureAvailabilityWindow = faker.datatype.number(100),
         this.AppointmentCutOffWindow = faker.datatype.number(100),
         this.SummaryEmailNotificationTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
-        this.ReminderEmailNotificationTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
-        this.ReminderTextMessageNotificationTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
-        this.LeadTimeForAppointmentBooking = faker.datatype.number(100),
+        this.ReminderEmailNotificationTime = faker.datatype.number(2.0),
+        this.ReminderTextMessageNotificationTime = faker.datatype.number(2.0),
+        this.LeadTimeForAppointmentBooking = faker.datatype.number(2.0),
         this.ConcurrencyMode = null,
         this.MaxNumOfAppointments = faker.datatype.number(100),
         this.FloatPriorityMode = Math.round(Math.random()),

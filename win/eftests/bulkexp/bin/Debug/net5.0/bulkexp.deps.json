@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "bulkexp/1.0.0": {
         "dependencies": {
+          "ColorHelper": "1.4.0",
           "CsvHelper": "27.1.0",
           "EFCore.BulkExtensions": "5.2.2",
           "Microsoft.EntityFrameworkCore": "5.0.6",
@@ -19,6 +20,14 @@
         },
         "runtime": {
           "bulkexp.dll": {}
+        }
+      },
+      "ColorHelper/1.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/ColorHelper.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
         }
       },
       "CsvHelper/27.1.0": {
@@ -870,6 +879,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ColorHelper/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jQA4joEirJC9pK4vLdgkjxnCCbI0D8aSNe8dPL58JN7KJnyKhAAZCb9Jk1MHB0x8mk6kd+XYdpRoI1WXtt92NQ==",
+      "path": "colorhelper/1.4.0",
+      "hashPath": "colorhelper.1.4.0.nupkg.sha512"
     },
     "CsvHelper/27.1.0": {
       "type": "package",

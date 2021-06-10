@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "ColorHelper/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ColorHelper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ColorHelper.dll": {}
+        }
+      },
       "CsvHelper/27.1.0": {
         "type": "package",
         "compile": {
@@ -1018,6 +1027,19 @@
     }
   },
   "libraries": {
+    "ColorHelper/1.4.0": {
+      "sha512": "jQA4joEirJC9pK4vLdgkjxnCCbI0D8aSNe8dPL58JN7KJnyKhAAZCb9Jk1MHB0x8mk6kd+XYdpRoI1WXtt92NQ==",
+      "type": "package",
+      "path": "colorhelper/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colorhelper.1.4.0.nupkg.sha512",
+        "colorhelper.nuspec",
+        "lib/netstandard2.0/ColorHelper.dll",
+        "logo.jpg"
+      ]
+    },
     "CsvHelper/27.1.0": {
       "sha512": "nrUpgvwEOq6xcdpvAMV0bnzVz1mHcPy9LjWXVbZq9pKs5nWdVFmUMoiEBsxY9+f1mR2Rdk0fOkK91OstYjTVxA==",
       "type": "package",
@@ -2840,6 +2862,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ColorHelper >= 1.4.0",
       "CsvHelper >= 27.1.0",
       "EFCore.BulkExtensions >= 5.2.2",
       "Microsoft.EntityFrameworkCore >= 5.0.6",
@@ -2894,6 +2917,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "ColorHelper": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
           "CsvHelper": {
             "target": "Package",
             "version": "[27.1.0, )"

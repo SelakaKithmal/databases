@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "ColorHelper": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
             "CsvHelper": {
               "target": "Package",
               "version": "[27.1.0, )"

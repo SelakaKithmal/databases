@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pC7E/fUXLRj1VeioxuEK2adRwG5bTPm6wL06ZH20E2dVdpUzElfqsiyTVWWzwexl8hYdm7p0tLnI+bszTnsASg==",
+  "dgSpecHash": "eYrBXgfe8w1jD/BPERwJ2dA/UiIiR1EuNlDgBUp2HyU1Hr6M8CJEY5iwKjER1KAG2STXQXnZsuzJczv9+tPX/Q==",
   "success": true,
   "projectFilePath": "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\buwanekas\\.nuget\\packages\\colorhelper\\1.4.0\\colorhelper.1.4.0.nupkg.sha512",
     "C:\\Users\\buwanekas\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512",
     "C:\\Users\\buwanekas\\.nuget\\packages\\efcore.bulkextensions\\5.2.2\\efcore.bulkextensions.5.2.2.nupkg.sha512",
     "C:\\Users\\buwanekas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
