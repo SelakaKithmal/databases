@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {}
+    "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {}
   },
   "projects": {
-    "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {
+    "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
+        "projectUniqueName": "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
         "projectName": "bulkexp",
-        "projectPath": "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
+        "projectPath": "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
         "packagesPath": "C:\\Users\\buwanekas\\.nuget\\packages\\",
-        "outputPath": "E:\\repos\\databases\\win\\eftests\\bulkexp\\obj\\",
+        "outputPath": "e:\\repos\\databases\\win\\eftests\\bulkexp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

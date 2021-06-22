@@ -75,7 +75,7 @@ namespace bulkexp
                     {
                         FkLocationTypeId = context.LocationTypes.Where(lt => lt.LocationTypeName.Trim().ToLower().Equals(loc.LocationType.Trim().ToLower())).Select(lt => lt.LocationTypeId).SingleOrDefault(),
                         AutoWrapupApptStatus = context.AppointmentStatuses.Where(apt => apt.AppointmentStatusName.Trim().ToLower().Equals(loc.AutoWrapUpApptStatus.Trim().ToLower())).Select(apt => apt.AppointmentStatusId).SingleOrDefault(),
-                        ActiveStatus = loc.ActiveStatus ? 1 : 0,
+                        ActiveStatus = (byte)(loc.ActiveStatus ? 1 : 0),
                         Address1 = loc.Address1.Trim(),
                         Address2 = loc.Address2.Trim(),
                         AppointmentCutOffDays = loc.AppointmentCutoffWindow,

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eYrBXgfe8w1jD/BPERwJ2dA/UiIiR1EuNlDgBUp2HyU1Hr6M8CJEY5iwKjER1KAG2STXQXnZsuzJczv9+tPX/Q==",
+  "dgSpecHash": "Dq0/bLL0yDocQrV2Qn3E+YmybXh3LgCEDC6YGCoKuByEsC7dDxTiYIKbQHozOJ0W85GRgVCTc8o+dM4IwOdv4A==",
   "success": true,
-  "projectFilePath": "E:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
+  "projectFilePath": "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\buwanekas\\.nuget\\packages\\colorhelper\\1.4.0\\colorhelper.1.4.0.nupkg.sha512",
     "C:\\Users\\buwanekas\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512",
