@@ -1,9 +1,9 @@
 const fs = require('fs');
 const faker = require('faker');
 
-const path = 'locations_small.csv';
+const path = 'locations_small_dupe.csv';
 
-const header = 'Location Code,Location Name,Location Display Name,Location Type,Parent Location Code,Active Status,Test Location,Timezone,Address Line 1,Address Line 2,City,State,Zip Code,Country,Phone Number,Phone Ext.,Email,Location Phone Number,Latitude,Longitude,Location Color,Auto-Wrap Time,Show Signed in Users,Enable Wait Smarter,Allow remote check-in,Cutoff Before Closing,Check In Lead Time,Use Appointments,Future Availability Window,Appointment Cutoff Window,Summary Email Notification Time,Reminder Email Notification Time,Reminder text message notification time,Lead time for appointment booking,Concurrency Mode,Max. no of Appointments,Float Priority Mode,Change Appointemnt Status,Appointment status to change,Allow request staff,Show in widget,Use Events\n';
+const header = 'Location Code,Location Name,Location Display Name,Location Type,Parent Location Code,Active Status,Test Location,Timezone,Address Line 1,Address Line 2,City,State,Zip Code,Country,Phone Number,Phone Ext.,Email,Latitude,Longitude,Location Color,Auto-Wrap Time,Show Signed in Users,Enable Wait Smarter,Allow remote check-in,Cutoff Before Closing,Check In Lead Time,Use Appointments,Future Availability Window,Appointment Cutoff Window,Summary Email Notification Time,Reminder Email Notification Time,Reminder text message notification time,Lead time for appointment booking,Concurrency Mode,Max. no of Appointments,Float Priority Mode,Change Appointemnt Status,Appointment status to change,Allow request staff,Show in widget,Use Events\n';
 
 const users = ['buwanekas@zone24x7.com',
     'integrationuser@system.prov',
@@ -133,13 +133,14 @@ const locationTypes = [
 'Department',
 ]
 
-let lim = 5000;
+let lim = 500;
+let lowLim = 490;
 
 fs.appendFileSync(path, header, 'utf8', err => {
     err ? console.log(err.message) : null
 });
 
-while(lim > 0) {
+while(lim > lowLim) {
 
     faker.seed(lim);
 
@@ -161,7 +162,6 @@ while(lim > 0) {
         this.Phonenumber = faker.phone.phoneNumber('###-###-####'),
         this.PhoneExt = faker.datatype.number(4),
         this.Email = faker.internet.email(),
-        this.LocationPhone = faker.phone.phoneNumber('###-###-####'),
         this.Latitude = Number(faker.address.latitude()),
         this.Longitude = Number(faker.address.longitude()),
         this.LocationColor = `RGB(${faker.datatype.number(255)},${faker.datatype.number(255)},${faker.datatype.number(255)})`,
@@ -172,15 +172,15 @@ while(lim > 0) {
         this.CutOffBeforeClosing = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.CheckInLeadTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.UseAppointments = Math.round(Math.random()),
-        this.FutureAvailabilityWindow = faker.datatype.number(100),
-        this.AppointmentCutOffWindow = faker.datatype.number(100),
+        this.FutureAvailabilityWindow = faker.datatype.number(100) + 1,
+        this.AppointmentCutOffWindow = faker.datatype.number(100) + 1,
         this.SummaryEmailNotificationTime = new Date(faker.time.recent()).toLocaleTimeString('en-US', {hour12: false}),
         this.ReminderEmailNotificationTime = faker.datatype.number(2.0),
         this.ReminderTextMessageNotificationTime = faker.datatype.number(2.0),
         this.LeadTimeForAppointmentBooking = faker.datatype.number(2.0),
         this.ConcurrencyMode = null,
         this.MaxNumOfAppointments = faker.datatype.number(100),
-        this.FloatPriorityMode = Math.round(Math.random()),
+        this.FloatPriorityMode = Math.round(2*Math.random() + 1),
         this.ChangeAppointmentStatus = Math.round(Math.random()),
         this.AppointmentStatusToChange = appointmentStatus[Math.round(Math.random()*(appointmentStatus.length-1))],
         this.AllowRequestStaff = Math.round(Math.random()),
