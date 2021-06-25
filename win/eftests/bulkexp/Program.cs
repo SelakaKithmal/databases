@@ -1,4 +1,5 @@
-﻿using bulkexp.Models;
+﻿
+using bulkexp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,7 +24,7 @@ namespace bulkexp
             return Host.CreateDefaultBuilder(args)
                 .ConfigureServices((host, services) =>
                 {
-                    services.AddDbContextFactory<CC_Client_UKG_CloneContext>(options => options.UseSqlServer(host.Configuration.GetConnectionString("Default")));
+                    services.AddDbContext<ABCContext>(options => options.UseSqlServer(host.Configuration.GetConnectionString("Default")));
                     services.AddTransient<App>();
                 });
         }

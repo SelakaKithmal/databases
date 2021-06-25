@@ -1,36 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {}
+    "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {}
   },
   "projects": {
-    "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {
+    "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
+        "projectUniqueName": "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
         "projectName": "bulkexp",
-        "projectPath": "e:\\repos\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
-        "packagesPath": "C:\\Users\\buwanekas\\.nuget\\packages\\",
-        "outputPath": "e:\\repos\\databases\\win\\eftests\\bulkexp\\obj\\",
+        "projectPath": "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp\\bulkexp.csproj",
+        "packagesPath": "C:\\Users\\selakan\\.nuget\\packages\\",
+        "outputPath": "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\buwanekas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\selakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://fmsi-tfs.kronos.com/tfs/DefaultCollection/_packaging/CC-NuGetFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,8 +42,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "ColorHelper": {
               "target": "Package",
@@ -54,35 +55,35 @@
             },
             "EFCore.BulkExtensions": {
               "target": "Package",
-              "version": "[5.2.2, )"
+              "version": "[3.3.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[3.1.8, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[3.1.8, )"
             }
           },
           "imports": [
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

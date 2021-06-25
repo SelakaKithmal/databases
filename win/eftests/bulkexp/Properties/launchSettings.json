@@ -2,7 +2,7 @@
   "profiles": {
     "bulkexp": {
       "commandName": "Project",
-      "workingDirectory": "E:\\repos\\databases\\win\\eftests\\bulkexp"
+      "workingDirectory": "D:\\OPEN SOURCE\\databases\\win\\eftests\\bulkexp"
     }
   }
 }
